@@ -39,13 +39,20 @@ authorRouter.post("/", (req, res) => {
     const newAuthor = { id: nanoid(), ...req.body }
 
     const authors = JSON.parse(fs.readFileSync(authorJSONPath))
-  
+    
+    const yes = authors.find(a => a.email == req.body.email) // restrict same email
+    if(yes){
+
+        res.status(200).send("sorry pls another email")
+        
+    } else {
+
     authors.push(newAuthor)
 
     fs.writeFileSync(authorJSONPath, JSON.stringify(authors))
 
     res.status(201).send({newAuthor})
-})
+}})
 
 // PUT /authors/123 => edit the author with the given id
 
