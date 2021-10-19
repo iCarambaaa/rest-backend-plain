@@ -2,7 +2,9 @@ import express from 'express';
 import fs from 'fs';
 import {fileURLToPath} from "url";
 import {dirname, join} from "path";
-// import nanoid from "nanoid";
+import {nanoid} from "nanoid";
+// import flatten from 'flat';
+
 
 const authorRouter = express.Router()
 
@@ -25,22 +27,48 @@ res.send(content);
 authorRouter.get("/:id", (req, res) => {
     const content = JSON.parse(fs.readFileSync(authorJSONPath)); //transform twice
 
-    const author = content.find(a => a.id.toString() === req.params.id)
+    const author = content.find(a => a.id == req.params.id)
 
     res.send(author);
 })
 
 // POST /authors => create a new author
 
-// authorRouter.post("/", (req, res) => {})
+authorRouter.post("/", (req, res) => {
+
+    const newAuthor = { id: nanoid(), ...req.body }
+
+    const authors = JSON.parse(fs.readFileSync(authorJSONPath))
+  
+    authors.push(newAuthor)
+
+    fs.writeFileSync(authorJSONPath, JSON.stringify(authors))
+
+    res.status(201).send({newAuthor})
+})
 
 // PUT /authors/123 => edit the author with the given id
 
-// authorRouter.put("/:id", (req, res) => {})
+authorRouter.put("/:id", (req, res) => {
+    const content = JSON.parse(fs.readFileSync(authorJSONPath)); //transform twice
+    const index = content.findIndex(a => a.id == req.params.id)
+    const update = {...content[index], ...req.body}
+
+    content[index] = update
+
+    fs.writeFileSync(authorJSONPath, JSON.stringify(content))
+
+    res.send({update})
+})
 
 // DELETE /authors/123 => delete the author with the given id
 
-// authorRouter.delete("/:id", (req, res) => {})
+authorRouter.delete("/:id", (req, res) => {
+    const content = JSON.parse(fs.readFileSync(authorJSONPath)); //transform twice
+    const remaining = content.filter(a => a.id != req.params.id)
+    fs.writeFileSync(authorJSONPath, JSON.stringify(remaining))
+    res.status(204).send()
+})
 
 
 export default authorRouter
