@@ -43,8 +43,8 @@ authorRouter.post("/", (req, res) => {
     const yes = authors.find(a => a.email == req.body.email) // restrict same email
     if(yes){
 
-        res.status(200).send("sorry pls another email")
-        
+        res.status(200).send("sorry pls try again with another email")
+
     } else {
 
     authors.push(newAuthor)
