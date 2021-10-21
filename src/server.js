@@ -2,20 +2,25 @@ import express from 'express';
 import listEndpoints from "express-list-endpoints";
 import authorRouter from "./services/authors/index.js";
 import postsRouter from "./services/posts/index.js";
+import filesRouter from "./services/files/index.js";
 import cors from "cors";
 import { genericErrorHandler, badRequestHandler, unauthorizedHandler, notFoundHandler } from "./errorHandlers.js";
+import { join } from "path"
 
 const server = express()
+
+const publicFolderPath = join(process.cwd(), "./public")
 
 server.use(cors()) // this! for FE & BE communication
 server.use(express.json())   // this! specify before ENDPOINTS, else all will be UNDEFINED
 
+server.use(express.static(publicFolderPath)) // Folder declared as static (serving content)
 
 // ************************ ENDPOINTS **********************
 
 server.use("/authors", authorRouter)
 server.use("/posts", postsRouter)
-
+server.use("/", filesRouter)
 
 // *********************** ERROR MIDDLEWARES ***************************
 

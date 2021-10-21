@@ -1,1 +1,54 @@
-[{"_id":"SERVERR_GENERATED _ID","category":"ARTICLE CATEGORY","title":"ARTICLE TITLE","cover":"ARTICLE COVER (IMAGE LINK)","readTime":{"value":2,"unit":"minute"},"author":{"name":"AUTHOR AVATAR NAME","avatar":"AUTHOR AVATAR LINK"},"content":"HTML","createdAt":"NEW DATE"},{"_id":"cOo4K8R_2LN4pne5NDP_P","name":"Jack the rapper","category":"Fishing","title":"jj1916@hotmail.xyz","avatar":"https://cdn.fakercloud.com/avatars/oskamaya_128.jpg","content":"lorem ipsum dolorem","createdAt":"2021-10-20T23:36:30.365Z"},{"_id":"sEqfAh2m0b9sqg72MKt0G","category":"Pizza","title":"Luigies big fiesta","cover":"","readTime":{"value":"4","unit":"minute"},"author":{"name":"James","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:39:43.274Z"},{"_id":"YJqbzvOEFUdZZTp8GO1EN","category":"uniform","title":"Luigies big fiesta","cover":"","readTime":{"value":"4","unit":"minute"},"author":{"name":"James","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:40:40.634Z"},{"_id":"mvKqzU5IMmonHiDC0rl5H","category":"discrete","title":"blanditiis-minima-doloribus","cover":"","readTime":{"value":"4","unit":"minute"},"author":{"name":"James","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:41:08.621Z"},{"_id":"U--TSRlTC6i8jHRplV8W9","category":"interactive","title":"maiores-sequi-ex","cover":"http://placeimg.com/640/480","readTime":{"value":"4","unit":"minute"},"author":{"name":"James","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:41:26.841Z"},{"_id":"Oujrc9CQoBc_gYfcMga-I","category":"discrete","title":"nihil-libero-debitis","cover":"http://placeimg.com/640/480","readTime":{"value":"47","unit":"minute"},"author":{"name":"James","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:41:42.040Z"},{"_id":"xyh9qQb2jangCn2DJ1FJf","category":"4th generation","title":"dolor-harum-vel","cover":"http://placeimg.com/640/480","readTime":{"value":"448","unit":"minute"},"author":{"name":"Shea","avatar":""},"content":"Lorem","createdAt":"2021-10-20T23:41:55.524Z"},{"_id":"QfEsJ7ONRyCunKM4fFocW","category":"transitional","title":"libero-dolor-maiores","cover":"http://placeimg.com/640/480","readTime":{"value":"619","unit":"minute"},"author":{"name":"Jonathan","avatar":"https://cdn.fakercloud.com/avatars/pixage_128.jpg"},"content":"Lorem","createdAt":"2021-10-20T23:42:08.478Z"},{"_id":"4FBPX3OnbGgN2ZFwAQjij","category":"grid-enabled","title":"voluptatum-error-voluptatem","cover":"http://placeimg.com/640/480","readTime":{"value":"95","unit":"minute"},"author":{"name":"Anabelle","avatar":"https://cdn.fakercloud.com/avatars/anaami_128.jpg"},"content":"https://cdn.fakercloud.com/avatars/vijaykarthik_128.jpg","createdAt":"2021-10-20T23:43:41.117Z"},{"_id":"epH38_EQFnKl7YNdCHU8m","category":"holistic","title":"magni-quasi-quae","cover":"http://placeimg.com/640/480","readTime":{"value":"276","unit":"minute"},"author":{"name":"Kayley","avatar":"https://cdn.fakercloud.com/avatars/coreyweb_128.jpg"},"content":"Fuga fugit blanditiis velit. Ea exercitationem sed assumenda quam et ipsam et fuga architecto. Unde est sint accusantium recusandae voluptatem qui voluptatem. Minima mollitia magni blanditiis nemo.","createdAt":"2021-10-20T23:44:08.482Z"},{"name":" jackds","text":"jackadaba Döu!","postId":"9B3HwFD4mLIuOL0-ebKs2"},{"name":" jackds","text":"jackadaba Döu!","postId":"nrQbQ2_tSPVl5-ai8diHT"},{"0":{"name":"john","text":"jabadaba Du!"},"1":{"name":"Jill","text":"exquisite"},"name":" jack","text":"jackadaba Du!","postId":"vFUsGSAsgawNn7_VN8BOj"}]
+[
+  {
+    "_id": "SERVERR_GENERATED _ID",
+    "category": "ARTICLE CATEGORY",
+    "title": "ARTICLE TITLE",
+    "cover": "ARTICLE COVER (IMAGE LINK)",
+    "readTime": { "value": 2, "unit": "minute" },
+    "author": { "name": "AUTHOR AVATAR NAME", "avatar": "AUTHOR AVATAR LINK" },
+    "content": "HTML",
+    "createdAt": "NEW DATE"
+  },
+  {
+    "_id": "xauBdUxUaW_Lia082p_gW",
+    "category": "24/7",
+    "title": "magni-fuga-aspernatur",
+    "cover": "http://placeimg.com/640/480",
+    "readTime": { "value": "65", "unit": "minute" },
+    "author": {
+      "name": "Celestino",
+      "avatar": "https://cdn.fakercloud.com/avatars/madcampos_128.jpg"
+    },
+    "content": "Adipisci eos ipsam rerum cum. Iusto modi voluptas a repellat nihil consequatur velit. Nemo nisi aperiam ut dolorum quibusdam. Quia qui deleniti quasi quia laborum consequatur sunt eum ut. Tempora eaque non non quia repellendus quam non impedit deleniti.",
+    "comments": [],
+    "createdAt": "2021-10-21T15:29:06.121Z"
+  },
+  {
+    "_id": "TW1omuZfEXjHSBngI7DKg",
+    "category": "reciprocal",
+    "title": "quo-dolorem-enim",
+    "cover": "http://placeimg.com/640/480",
+    "readTime": { "value": "808", "unit": "minute" },
+    "author": {
+      "name": "Ezekiel",
+      "avatar": "https://cdn.fakercloud.com/avatars/charliegann_128.jpg"
+    },
+    "content": "Tenetur inventore cumque corrupti. Nulla est illo animi vitae. Sit esse consequatur itaque ratione quaerat placeat. Voluptatem quaerat dolore nesciunt sit id qui. Aut qui magnam numquam voluptas molestias natus.",
+    "comments": [],
+    "createdAt": "2021-10-21T15:29:11.812Z"
+  },
+  {
+    "_id": "xGIv8ybmmz2pSMZ9hpPky",
+    "category": "mission-critical",
+    "title": "qui-voluptas-sit",
+    "cover": "http://placeimg.com/640/480",
+    "readTime": { "value": "654", "unit": "minute" },
+    "author": {
+      "name": "Carlos",
+      "avatar": "https://cdn.fakercloud.com/avatars/tanveerrao_128.jpg"
+    },
+    "content": "Ut neque quia earum iste ut exercitationem quasi. Tempora recusandae velit culpa ullam aperiam cum. A corrupti commodi esse et voluptatum rem et. Illo molestias voluptates odio molestiae totam. Culpa totam repellendus aut laboriosam dicta optio optio temporibus. Mollitia blanditiis enim vitae saepe.",
+    "comments": [],
+    "createdAt": "2021-10-21T15:29:13.523Z"
+  }
+]
