@@ -1,11 +1,12 @@
 import express from "express"
-import { fileURLToPath } from "url"
-import { dirname, join } from "path"
-import fs from "fs"
+// import { fileURLToPath } from "url"
+// import { dirname, join } from "path"
+// import fs from "fs-extra"
 import {nanoid }from "nanoid"
 import createHttpError from "http-errors"
 import { validationResult } from "express-validator"
 import { postsValidationMiddlewares } from "./validation.js"
+import {getPosts, writePosts} from "../../lib/fs-tools.js"
 
 const postsRouter = express.Router()
 
