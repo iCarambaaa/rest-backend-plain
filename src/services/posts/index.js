@@ -148,19 +148,26 @@ postsRouter.post("/:id/comments", async (req, res, next) => {
     const posts = await getPosts()
 
     const index = posts.findIndex(post => post._id === req.params.id)
+if(index !== -1) {
 
-    const postToAddTheComment = posts[index]
-    const comments = postToAddTheComment.comments
-    console.log(comments)
-    const newComment= {  ...req.body, postId : nanoid() }
+  posts[index].comments.push({
+    ...req.body, id: nanoid(), createdAt: new Date()
+  })
+//     const postToAddTheComment = posts[index]
+//     const newComment= {  ...req.body, commentId : nanoid() }
+//     const comments = [...postToAddTheComment.comments]
+//     console.log(comments)
 
-    const updatedPost = { ...comments, ...newComment }
+//     const updatedPost = { ...comments, ...newComment }
 
-    posts[index] = updatedPost
+//     posts[index] = updatedPost
 
-    await writePosts(posts)
+   await writePosts(posts)
 
-    res.send(updatedPost)
+ res.send(posts[index])
+// }else{
+  res.status(404).send("not found")
+}
   } catch (error) {
 
     next(error)

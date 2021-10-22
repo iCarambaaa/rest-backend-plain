@@ -9,7 +9,7 @@ import { join } from "path"
 
 const server = express()
 
-const publicFolderPath = join(process.cwd(), "./public")
+export const publicFolderPath = join(process.cwd(), "./public") //process.cwd() gives the root folder
 
 server.use(cors()) // this! for FE & BE communication
 server.use(express.json())   // this! specify before ENDPOINTS, else all will be UNDEFINED
@@ -36,5 +36,5 @@ const port = 3001
 console.table(listEndpoints(server)) // usage of express-list-endpoints
 
 server.listen(port, () => {
-    console.log('listening on port:', port)
+    console.log('✅ listening on port:', port)
 })

@@ -5,10 +5,12 @@ import { savePostPicture, saveAuthorsAvatar } from "../../lib/fs-tools.js"
 
 const filesRouter = express.Router()
 
-filesRouter.post("/authors/:id/uploadAvatar", multer().single("profilePic"), async (req, res, next) => {
+filesRouter.post("/authors/:id/avatar", multer().single("avatar"), async (req, res, next) => {
   try {
     console.log(req.file)
-
+    const extension = extname(originalname)
+    const fileName = `${req.params.id}${extension}`
+    const link = `http://localhost:3001/${fileName}`
     await saveAuthorsAvatar(req.file.originalname, req.file.buffer)
     res.send("ok")
   } catch (error) {
@@ -16,7 +18,7 @@ filesRouter.post("/authors/:id/uploadAvatar", multer().single("profilePic"), asy
   }
 })
 
-filesRouter.post("/blogPosts/:id/uploadCover", multer().array("coverPic"), async (req, res, next) => {
+filesRouter.post("/blogPosts/:id/cover", multer().array("cover"), async (req, res, next) => {
   try {
     console.log(req.files)
 
