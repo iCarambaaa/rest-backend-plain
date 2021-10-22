@@ -36,5 +36,5 @@ const port = 3001
 console.table(listEndpoints(server)) // usage of express-list-endpoints
 
 server.listen(port, () => {
-    console.log('✅ listening on port:', port)
+    console.log('listening on port:', port, "✅")
 })
